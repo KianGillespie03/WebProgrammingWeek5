@@ -1,5 +1,5 @@
 {
-  "name": "week5movie-list",
+  "name": "movie-list",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:Week5movie-list": "node dist/week5movie-list/server/server.mjs"
+    "serve:ssr:movie-list": "node dist/movie-list/server/server.mjs"
   },
   "private": true,
   "dependencies": {

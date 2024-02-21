@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+
 import { MovieService } from '../movie.service';
 
 @Component({
@@ -9,10 +10,11 @@ import { MovieService } from '../movie.service';
   styleUrl: './add-movie.component.css'
 })
 export class AddMovieComponent {
-constructor (private movieService:MovieService) {}
 
-addNewMovie(movietitle:HTMLInputElement, moviedirector:HTMLInputElement, movieyear:HTMLInputElement):boolean {
-  this.movieService.addMovie(movietitle.value,moviedirector.value,movieyear.value);
-  return false;
-}
+  constructor (private movieService: MovieService) {}
+
+  addNewMovie(movietitle:HTMLInputElement, moviedirector:HTMLInputElement, movieyear:HTMLInputElement) :boolean {
+    this.movieService.addMovie(movietitle.value,moviedirector.value,movieyear.value);
+    return false;
+  }
 }

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Week4Movie-list": {
+    "movie-list": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/week4-movie-list",
+            "outputPath": "dist/movie-list",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -25,8 +25,8 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
-              
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Week4Movie-list:build:production"
+              "buildTarget": "movie-list:build:production"
             },
             "development": {
-              "buildTarget": "Week4Movie-list:build:development"
+              "buildTarget": "movie-list:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "Week4Movie-list:build"
+            "buildTarget": "movie-list:build"
           }
         },
         "test": {
@@ -90,8 +90,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
-
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -100,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "6e811e5a-d674-48fe-b957-032bfddc7aca"
+    "analytics": "b9637253-5188-4c62-9cbd-1057ca42d546"
   }
 }
