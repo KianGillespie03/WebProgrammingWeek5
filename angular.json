@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Week5movie-list": {
+    "Week4Movie-list": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/week5movie-list",
+            "outputPath": "dist/week4-movie-list",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -25,7 +25,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -62,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Week5movie-list:build:production"
+              "buildTarget": "Week4Movie-list:build:production"
             },
             "development": {
-              "buildTarget": "Week5movie-list:build:development"
+              "buildTarget": "Week4Movie-list:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "Week5movie-list:build"
+            "buildTarget": "Week4Movie-list:build"
           }
         },
         "test": {
@@ -89,12 +90,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "6e811e5a-d674-48fe-b957-032bfddc7aca"
   }
 }
